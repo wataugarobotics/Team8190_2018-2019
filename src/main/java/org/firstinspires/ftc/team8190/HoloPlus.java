@@ -18,17 +18,20 @@ package org.firstinspires.ftc.team8190;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name = "8190: HoloPlus", group = "8190")
 //@Disabled
 public class HoloPlus extends OpMode {
     org.firstinspires.ftc.team8190.Hardware8190 robot = new Hardware8190();
+    ColorSensor color_sensor;
 
     @Override
     public void init()
     {
         robot.init(hardwareMap);
+        color_sensor = hardwareMap.colorSensor.get("color");
     }
 
     // Code to run REPEATEDLY after the driver hits INIT, but before they hit PLAY
@@ -54,6 +57,9 @@ public class HoloPlus extends OpMode {
         robot.mtrB.setPower(Range.clip((gamepad1.left_stick_x - gamepad1.right_stick_x), -1, 1));
         robot.mtrR.setPower(Range.clip((gamepad1.left_stick_y - gamepad1.right_stick_x), -1, 1));
         robot.mtrL.setPower(Range.clip((-gamepad1.left_stick_y - gamepad1.right_stick_x), -1, 1));
+
+        telemetry.addData("Red: ", Integer.toString(color_sensor.red()));
+        telemetry.addData("Blue: ", Integer.toString(color_sensor.blue()));
     }
 
     @Override
