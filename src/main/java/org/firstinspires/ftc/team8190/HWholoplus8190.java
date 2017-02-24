@@ -2,14 +2,11 @@ package org.firstinspires.ftc.team8190;
 
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.hardware.ColorSensor;
-
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 // Hardware config for 8190
 
-public class Hardware8190
+public class HWholoplus8190
 {
     // Public OpMode members
     public DcMotor  mtrF  = null;
@@ -21,7 +18,7 @@ public class Hardware8190
     private ElapsedTime period = new ElapsedTime();
 
     // Constructor
-    public Hardware8190()
+    public HWholoplus8190()
     {
     }
 
@@ -32,10 +29,10 @@ public class Hardware8190
         hwMap = ahwMap;
 
         // Define and Initialize Motors
-        mtrL   = hwMap.dcMotor.get("mtrL");
-        mtrR   = hwMap.dcMotor.get("mtrR");
-        mtrF   = hwMap.dcMotor.get("mtrF");
-        mtrB   = hwMap.dcMotor.get("mtrB");
+        mtrL = hwMap.dcMotor.get("mtrL");
+        mtrR = hwMap.dcMotor.get("mtrR");
+        mtrF = hwMap.dcMotor.get("mtrF");
+        mtrB = hwMap.dcMotor.get("mtrB");
 
         // Set all motors to run WITHOUT (or USING) encoders
         mtrL.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
