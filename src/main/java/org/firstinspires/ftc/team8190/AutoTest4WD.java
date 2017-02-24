@@ -10,7 +10,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 @Autonomous(name = "8190: AutoTest4WD", group = "8190")
-@Disabled
+//@Disabled
 public class AutoTest4WD extends LinearOpMode {
     HWtank8190 robot = new HWtank8190();
 
