@@ -6,7 +6,6 @@
 package org.firstinspires.ftc.team8190;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 @Autonomous(name = "8190: AutoTest4WD", group = "8190")
@@ -25,21 +24,21 @@ public class AutoTest4WD extends LinearOpMode {
         robot.mtrBL.setPower(0.5);
         robot.mtrBR.setPower(0.5);
 
-        sleep(2500);
+        sleep(1000);
 
         robot.mtrFL.setPower(-0.5);
         robot.mtrFR.setPower(0.5);
         robot.mtrBL.setPower(-0.5);
         robot.mtrBR.setPower(0.5);
 
-        sleep(500);
+        sleep(1000);
 
         robot.mtrFL.setPower(0.5);
         robot.mtrFR.setPower(-0.5);
         robot.mtrBL.setPower(0.5);
         robot.mtrBR.setPower(-0.5);
 
-        sleep(500);
+        sleep(1000);
 
         robot.mtrFL.setPower(0);
         robot.mtrFR.setPower(0);
