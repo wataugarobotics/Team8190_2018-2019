@@ -38,10 +38,10 @@ public class Tank4WD extends OpMode {
         // Stick Y-Axes Control Respective Sides
 
         //set motor power to clipped range of gamepad input
-        robot.mtrFL.setPower(Range.clip((-gamepad1.left_stick_y), -1, 1));
-        robot.mtrFR.setPower(Range.clip((gamepad1.right_stick_y), -1, 1));
-        robot.mtrBL.setPower(Range.clip((-gamepad1.left_stick_y), -1, 1));
-        robot.mtrBR.setPower(Range.clip((gamepad1.right_stick_y), -1, 1));
+        robot.mtrFL.setPower(Range.clip((gamepad1.left_stick_y), -1, 1));
+        robot.mtrFR.setPower(Range.clip((-gamepad1.right_stick_y), -1, 1));
+        robot.mtrBL.setPower(Range.clip((gamepad1.left_stick_y), -1, 1));
+        robot.mtrBR.setPower(Range.clip((-gamepad1.right_stick_y), -1, 1));
     }
 
     @Override
