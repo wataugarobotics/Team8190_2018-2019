@@ -42,6 +42,10 @@ public class Tank4WD extends OpMode {
         robot.mtrFR.setPower(Range.clip((-gamepad1.right_stick_y), -1, 1));
         robot.mtrBL.setPower(Range.clip((gamepad1.left_stick_y), -1, 1));
         robot.mtrBR.setPower(Range.clip((-gamepad1.right_stick_y), -1, 1));
+
+        //show sensor status via telemetry
+        //telemetry.addData("Brightness: ", brightness);
+        telemetry.addData("Distance: ", Math.pow(robot.ODS.getRawLightDetected(), 0.5));
     }
 
     @Override

@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.team8190;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
@@ -13,6 +14,8 @@ public class HWtank8190
     public DcMotor  mtrFR = null;
     public DcMotor  mtrBL = null;
     public DcMotor  mtrBR = null;
+    public OpticalDistanceSensor ODS;
+
     // Local OpMode members
     HardwareMap hwMap = null;
     private ElapsedTime period = new ElapsedTime();
@@ -33,6 +36,7 @@ public class HWtank8190
         mtrFR = hwMap.dcMotor.get("mtrFR");
         mtrBL = hwMap.dcMotor.get("mtrBL");
         mtrBR = hwMap.dcMotor.get("mtrBR");
+        ODS = hwMap.opticalDistanceSensor.get("ods");
 
         // Set all motors to run WITHOUT (or USING) encoders
         mtrFL.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
