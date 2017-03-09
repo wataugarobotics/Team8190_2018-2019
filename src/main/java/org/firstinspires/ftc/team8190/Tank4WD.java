@@ -30,6 +30,8 @@ public class Tank4WD extends OpMode {
     @Override
     public void start()
     {
+        //set color sensor to active mode
+        robot.colorCreader.write8(3, 0); //write 0x03 byte - mode
     }
 
     @Override
@@ -44,7 +46,7 @@ public class Tank4WD extends OpMode {
         robot.mtrBR.setPower(Range.clip((-gamepad1.right_stick_y), -1, 1));
 
         //show sensor status via telemetry
-        //telemetry.addData("Brightness: ", brightness);
+        telemetry.addData("Color: ", robot.colorCreader.read(0x04, 1)[0] & 0xFF);   //read 0x04 byte - color #
         telemetry.addData("Distance: ", Math.pow(robot.ODS.getRawLightDetected(), 0.5));
     }
 

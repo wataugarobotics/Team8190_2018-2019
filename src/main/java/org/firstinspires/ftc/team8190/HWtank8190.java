@@ -2,6 +2,10 @@ package org.firstinspires.ftc.team8190;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
+import com.qualcomm.robotcore.hardware.I2cAddr;
+import com.qualcomm.robotcore.hardware.I2cDevice;
+import com.qualcomm.robotcore.hardware.I2cDeviceSynch;
+import com.qualcomm.robotcore.hardware.I2cDeviceSynchImpl;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
@@ -15,6 +19,8 @@ public class HWtank8190
     public DcMotor  mtrBL = null;
     public DcMotor  mtrBR = null;
     public OpticalDistanceSensor ODS;
+    public I2cDevice colorC;
+    public I2cDeviceSynch colorCreader;
 
     // Local OpMode members
     HardwareMap hwMap = null;
@@ -37,6 +43,9 @@ public class HWtank8190
         mtrBL = hwMap.dcMotor.get("mtrBL");
         mtrBR = hwMap.dcMotor.get("mtrBR");
         ODS = hwMap.opticalDistanceSensor.get("ods");
+        colorC = hwMap.i2cDevice.get("cc");
+        colorCreader = new I2cDeviceSynchImpl(colorC, I2cAddr.create8bit(0x3c), false);
+        colorCreader.engage();
 
         // Set all motors to run WITHOUT (or USING) encoders
         mtrFL.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
