@@ -5,19 +5,19 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1853900674997"
+    timestamp="15542190688987"
     token="1481049773575553831"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="128" />
+        duration="49" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="16" />
+        duration="4" />
     <task
         name="verifier"
         duration="1" />
@@ -27,7 +27,7 @@
         type="MAIN" />
 
     <build
-        timestamp="51562610301561"
+        timestamp="15542190688987"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/outputs/apk/Team8190-debug.apk"

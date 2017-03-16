@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 16 01:34:30 EST 2017
+#Thu Mar 16 17:37:39 EDT 2017
 14.set=ANDROID_RESOURCE
 180.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/drawable/icon_robotcontroller.png
 118.set=ASSET
@@ -30,7 +30,7 @@
 186.set=ASSET
 115.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/xml/preferences.xml
 49.set=ANDROID_RESOURCE
-92.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/xml/pushbot.xml
+92.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/darker_gray_line.xml
 167.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blockly/media/delete.wav
 198.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 121.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug
@@ -184,7 +184,7 @@
 0.set=ASSET
 195.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/raw/color_fragment_shader.glsl
 191.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
-170.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/raw/texture_fragment_shader.glsl
+170.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/motor_list.xml
 162.set=ANDROID_RESOURCE
 37.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug
 123.set=ASSET
@@ -239,7 +239,7 @@
 126.set=ASSET
 140.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug
 196.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/images/ftcServoController.png
-171.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/motor_list.xml
+171.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/raw/texture_fragment_shader.glsl
 38.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 133.set=ASSET
 17.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/raw/cube_mesh_vertex_shader.glsl
@@ -297,7 +297,7 @@
 143.set=ANDROID_RESOURCE
 18.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/loading_indicator_overlay.xml
 14.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
-45.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_inspection.xml
+45.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_programming_mode.xml
 99.set=ASSET
 104.set=ASSET
 97.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blocks/telemetry.js
@@ -352,7 +352,7 @@
 19.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/servo_list.xml
 15.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 10.set=ASSET
-46.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_programming_mode.xml
+46.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_inspection.xml
 114.set=ASSET
 98.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blocks/mr_i2c_compass_sensor.js
 21.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blockly/media/1x1.gif
@@ -592,7 +592,7 @@ count=206
 176.set=ASSET
 114.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blockly/media/click.mp3
 39.set=ANDROID_RESOURCE
-91.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/darker_gray_line.xml
+91.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/xml/pushbot.xml
 166.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/RobotConfigTaxonomy.xsd
 197.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug
 120.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_

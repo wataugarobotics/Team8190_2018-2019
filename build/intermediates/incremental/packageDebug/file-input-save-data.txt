@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 16 01:34:55 EST 2017
+#Thu Mar 16 17:40:41 EDT 2017
 14.set=ANDROID_RESOURCE
 180.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/images/ftcLED.png
 118.set=ASSET
@@ -184,7 +184,7 @@
 164.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 116.set=ASSET
 0.set=ASSET
-195.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/raw/color_fragment_shader.glsl
+195.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_blocks.xml
 191.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 170.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blockly/media/delete.mp3
 162.set=ANDROID_RESOURCE
@@ -241,7 +241,7 @@
 165.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 126.set=ASSET
 140.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug
-196.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_blocks.xml
+196.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/raw/color_fragment_shader.glsl
 171.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/motor_list.xml
 38.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 133.set=ASSET
@@ -301,7 +301,7 @@
 143.set=ASSET
 18.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/loading_indicator_overlay.xml
 14.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
-45.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_programming_mode.xml
+45.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_inspection.xml
 99.set=ASSET
 104.set=ASSET
 97.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blocks/telemetry.js
@@ -356,7 +356,7 @@
 19.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/servo_list.xml
 15.base=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_
 10.set=ASSET
-46.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_inspection.xml
+46.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/resources-debug.ap_/res/layout/activity_programming_mode.xml
 114.set=ASSET
 98.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blocks/mr_i2c_compass_sensor.js
 21.file=/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/assets/debug/blockly/media/1x1.gif

@@ -9,21 +9,23 @@ import com.qualcomm.robotcore.hardware.I2cDeviceSynchImpl;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
+import java.util.Objects;
+
 // Hardware config for 8190
 
 public class HWtank8190
 {
     // Public OpMode members
-    public DcMotor  mtrFL = null;
-    public DcMotor  mtrFR = null;
-    public DcMotor  mtrBL = null;
-    public DcMotor  mtrBR = null;
-    public OpticalDistanceSensor ODS;
-    public I2cDevice colorC;
-    public I2cDeviceSynch colorCreader;
+    public static DcMotor mtrFL = null;
+    public static DcMotor mtrFR = null;
+    public static DcMotor mtrBL = null;
+    public static DcMotor mtrBR = null;
+    public static OpticalDistanceSensor ODS;
+    private static I2cDevice colorC;
+    public static I2cDeviceSynch colorCreader;
 
     // Local OpMode members
-    HardwareMap hwMap = null;
+    private HardwareMap hwMap = null;
     private ElapsedTime period = new ElapsedTime();
 
     // Constructor
@@ -87,5 +89,66 @@ public class HWtank8190
     }
 }
 
+//Setup easy movement and sensor access
 
+class move {
+    private static void motorPower(double fr, double br, double fl, double bl) {
+        HWtank8190.mtrFR.setPower(fr);
+        HWtank8190.mtrBR.setPower(br);
+        HWtank8190.mtrFL.setPower(-fl);
+        HWtank8190.mtrBL.setPower(-bl);
+    }
+    public static void forward(double power) {
+        motorPower(power, power, power, power);
+    }
+    public static void reverse(double power) {
+        motorPower(-power, -power, -power, -power);
+    }
+    public static void right(double power) {
+        motorPower(-power, -power, power, power);
+    }
+    public static void left(double power) {
+        motorPower(power, power, -power, -power);
+    }
+    public static void stop() {
+        motorPower(0,0,0,0);
+    }
+    public static void swerve(String forwardreverse, String leftright, double power) {
+        if (Objects.equals(forwardreverse, "forward")) {
+            if (Objects.equals(leftright, "left")) {
+                HWtank8190.mtrFL.setPower(power);
+                HWtank8190.mtrBL.setPower(power);
+            }
+            if (Objects.equals(leftright, "right")) {
+                HWtank8190.mtrFR.setPower(power);
+                HWtank8190.mtrBR.setPower(power);
+            }
+        }
+        if (Objects.equals(forwardreverse, "reverse")) {
+            if (Objects.equals(leftright, "left")) {
+                HWtank8190.mtrFL.setPower(-power);
+                HWtank8190.mtrBL.setPower(-power);
+            }
+            if (Objects.equals(leftright, "right")) {
+                HWtank8190.mtrFR.setPower(-power);
+                HWtank8190.mtrBR.setPower(-power);
+            }
+        }
+    }
+}
 
+class sensor {
+    public static int getcolor() {
+        return HWtank8190.colorCreader.read(0x04, 1)[0]; //read 0x04 byte - color #
+    }
+    public static void colorlight(boolean on){
+        if (on) {
+            HWtank8190.colorCreader.write8(3, 0); //write 0x03 byte - mode
+        } else {
+            HWtank8190.colorCreader.write8(3, 1); //write 0x03 byte - mode
+        }
+    }
+    public static double getdistance() {
+        return Math.pow(HWtank8190.ODS.getRawLightDetected(), 0.5);
+    }
+}
