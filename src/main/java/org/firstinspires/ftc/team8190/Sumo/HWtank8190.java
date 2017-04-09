@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.Sumo;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;

@@ -14,7 +14,7 @@
  * version 1.3 Feb 3, 2017
  */
 
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.Holo;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;

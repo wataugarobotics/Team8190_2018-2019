@@ -3,7 +3,7 @@
  * version 2.0 Mar 16, 2017
  */
 
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.Sumo;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -22,8 +22,8 @@ How to make your own 8190 SumoBot autonomous program:
 -send it to me (Ben) so I can add it to the codebase
  */
 
-@Autonomous(name = "8190: AutoTest4WD", group = "8190")
-public class AutoTest4WD extends LinearOpMode {
+@Autonomous(name = "8190: Sumo4WD", group = "8190")
+public class Sumo4WD extends LinearOpMode {
     HWtank8190 robot = new HWtank8190();
 
     @Override
@@ -31,24 +31,21 @@ public class AutoTest4WD extends LinearOpMode {
         robot.init(hardwareMap);
         sensor.colorlight(true);
 
+        //auton
+        sleep(5100);
+        move.forward(0.5);
+        sleep(500);
+        move.left(0.5);
+        sleep(500);
         while (true) {
-            //movement demo
-            move.forward(0.5);
-            sleep(500);
-            move.right(0.5);
-            sleep(1000);
+            move.forward(0.1);
+            while (sensor.getcolor() == 0) {
+                sleep(5);
+            }
+            move.reverse(1);
+            sleep(250);
             move.left(0.5);
-            sleep(1000);
-            move.reverse(0.5);
             sleep(500);
-            move.swerve("forward", "left", 0.5);
-            sleep(500);
-            move.stop();
-            sleep(500);
-
-            //show sensor status via telemetry
-            telemetry.addData("Color: ", sensor.getcolor() & 0xFF);
-            telemetry.addData("Distance: ", sensor.getdistance());
         }
     }
 }
