@@ -31,6 +31,8 @@ public class Sumo4WD extends LinearOpMode {
         robot.init(hardwareMap);
         sensor.colorlight(true);
 
+        waitForStart();
+
         //auton
         sleep(5100);
         move.forward(0.5);

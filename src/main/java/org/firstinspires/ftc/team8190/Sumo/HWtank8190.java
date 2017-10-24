@@ -21,8 +21,8 @@ public class HWtank8190
     public static DcMotor mtrBL = null;
     public static DcMotor mtrBR = null;
     public static OpticalDistanceSensor ODS;
-    private static I2cDevice colorC;
-    public static I2cDeviceSynch colorCreader;
+    private static I2cDevice color;
+    public static I2cDeviceSynch colorReader;
 
     // Local OpMode members
     private HardwareMap hwMap = null;
@@ -45,9 +45,9 @@ public class HWtank8190
         mtrBL = hwMap.dcMotor.get("mtrBL");
         mtrBR = hwMap.dcMotor.get("mtrBR");
         ODS = hwMap.opticalDistanceSensor.get("ods");
-        colorC = hwMap.i2cDevice.get("cc");
-        colorCreader = new I2cDeviceSynchImpl(colorC, I2cAddr.create8bit(0x3c), false);
-        colorCreader.engage();
+        color = hwMap.i2cDevice.get("cc");
+        colorReader = new I2cDeviceSynchImpl(color, I2cAddr.create8bit(0x3c), false);
+        colorReader.engage();
 
         // Set all motors to run WITHOUT (or USING) encoders
         mtrFL.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
@@ -89,8 +89,7 @@ public class HWtank8190
     }
 }
 
-//Setup easy movement and sensor access
-
+//Easy movement class
 class move {
     private static void motorPower(double fr, double br, double fl, double bl) {
         HWtank8190.mtrFR.setPower(fr);
@@ -137,15 +136,16 @@ class move {
     }
 }
 
+//Easy sensor class
 class sensor {
     public static int getcolor() {
-        return HWtank8190.colorCreader.read(0x04, 1)[0]; //read 0x04 byte - color #
+        return HWtank8190.colorReader.read(0x04, 1)[0]; //read 0x04 byte - color #
     }
     public static void colorlight(boolean on){
         if (on) {
-            HWtank8190.colorCreader.write8(3, 0); //write 0x03 byte - mode
+            HWtank8190.colorReader.write8(3, 0); //write 0x03 byte - mode
         } else {
-            HWtank8190.colorCreader.write8(3, 1); //write 0x03 byte - mode
+            HWtank8190.colorReader.write8(3, 1); //write 0x03 byte - mode
         }
     }
     public static double getdistance() {

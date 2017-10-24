@@ -1,14 +1,14 @@
 [
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/menu/main_menu.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/Inspection-release/res/menu/main_menu.xml"
+        "source": "/home/benbroce/.android/build-cache/a5dfe7737cd6bcd7c7df3f38271038475e21da42/output/res/menu/main_menu.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/menu/menu_server.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/Blocks-release/res/menu/menu_server.xml"
+        "source": "/home/benbroce/.android/build-cache/101fe3afef1d37b3107a0ff936179fd2cc5e488a/output/res/menu/menu_server.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/ftc_app-master/FtcRobotController/unspecified/res/menu/ftc_robot_controller.xml"
+        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/menu/ftc_robot_controller.xml"
     }
 ]

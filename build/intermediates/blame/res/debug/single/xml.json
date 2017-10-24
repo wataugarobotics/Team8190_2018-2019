@@ -1,30 +1,30 @@
 [
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/device_filter.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/ftc_app-master/FtcRobotController/unspecified/res/xml/device_filter.xml"
+        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/xml/device_filter.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/squarebot.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/FtcCommon-release/res/xml/squarebot.xml"
+        "source": "/home/benbroce/.android/build-cache/680717e8d6c35c83fc52495d378c20c4406bd2aa/output/res/xml/squarebot.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/preferences.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/ftc_app-master/FtcRobotController/unspecified/res/xml/preferences.xml"
+        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/xml/preferences.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/pushbot.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/FtcCommon-release/res/xml/pushbot.xml"
+        "source": "/home/benbroce/.android/build-cache/680717e8d6c35c83fc52495d378c20c4406bd2aa/output/res/xml/pushbot.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/k9usbbot.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/FtcCommon-release/res/xml/k9usbbot.xml"
+        "source": "/home/benbroce/.android/build-cache/680717e8d6c35c83fc52495d378c20c4406bd2aa/output/res/xml/k9usbbot.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/k9legacybot.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/FtcCommon-release/res/xml/k9legacybot.xml"
+        "source": "/home/benbroce/.android/build-cache/680717e8d6c35c83fc52495d378c20c4406bd2aa/output/res/xml/k9legacybot.xml"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/xml/pushbotsens.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/FtcCommon-release/res/xml/pushbotsens.xml"
+        "source": "/home/benbroce/.android/build-cache/680717e8d6c35c83fc52495d378c20c4406bd2aa/output/res/xml/pushbotsens.xml"
     }
 ]

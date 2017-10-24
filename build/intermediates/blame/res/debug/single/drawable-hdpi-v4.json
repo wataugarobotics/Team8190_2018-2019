@@ -1,10 +1,10 @@
 [
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/ftc_app-master/FtcRobotController/unspecified/res/drawable-hdpi-v4/ic_launcher.png"
+        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/drawable-hdpi-v4/ic_launcher.png"
     },
     {
         "merged": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/res/merged/debug/drawable-hdpi-v4/button_shape.xml",
-        "source": "/home/benbroce/Desktop/robotics/ftc_app-master/Team8190/build/intermediates/exploded-aar/FtcCommon-release/res/drawable-hdpi-v4/button_shape.xml"
+        "source": "/home/benbroce/.android/build-cache/680717e8d6c35c83fc52495d378c20c4406bd2aa/output/res/drawable-hdpi-v4/button_shape.xml"
     }
 ]
