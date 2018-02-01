@@ -21,7 +21,6 @@ public class HWholoX
     public Servo rightClaw = null;
     public Servo leftClaw = null;
     public Servo level = null;
-    public Gamepad gamepad1 = null;
     public Servo arm = null;
     // Local OpMode members
     HardwareMap hwMap = null;
