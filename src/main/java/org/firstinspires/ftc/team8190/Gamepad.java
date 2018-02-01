@@ -16,10 +16,12 @@ public class Gamepad {
     public double stickRead (java.lang.String stick,java.lang.String value, double min, double max){
         if (stick.equals("right")  || stick.equals("Right") ){
             if (value.equals("x") || value.equals("X")){
-                return Range.clip(robot.gamepad1.right_stick_x, min, max);
+                //return Range.clip(robot.gamepad1.right_stick_x, min, max);
+                return Range.scale(gamepad1.right_stick_x, -1, 1, min, max);
             }
             else if (value.equals("y" )|| value.equals("Y")){
-                return Range.clip(robot.gamepad1.right_stick_y, min, max);
+                //return Range.clip(robot.gamepad1.right_stick_y, min, max);
+                return Range.scale(gamepad1.right_stick_y, -1, 1, min, max);
             }
             else{
                 return 0;
@@ -27,10 +29,12 @@ public class Gamepad {
         }
         else if (stick.equals("left") || stick.equals("Left")) {
             if (value.equals("x") || value.equals("X") ){
-                return Range.clip(robot.gamepad1.left_stick_x, min, max);
+                //return Range.clip(robot.gamepad1.left_stick_x, min, max);
+                return Range.scale(gamepad1.left_stick_x, -1, 1, min, max);
             }
             else if (value.equals("y") || value.equals("Y")){
-                return Range.clip(robot.gamepad1.left_stick_y, min, max);
+                //return Range.clip(robot.gamepad1.left_stick_y, min, max);
+                return Range.scale(gamepad1.left_stick_y, -1, 1, min, max);
             }
             else{
                 return 0;
@@ -51,10 +55,10 @@ public class Gamepad {
 
     public double triggerRead (java.lang.String trigger, double min, double max){
         if ((trigger == "left" )|| (trigger == "Left")){
-            return Range.scale(robot.gamepad1.left_trigger, 0, 127, min, max);
+            return Range.scale(gamepad1.left_trigger, 0, 127, min, max);
         }
         if ((trigger == "right" )|| trigger == "Right"){
-            return Range.scale(robot.gamepad1.right_trigger, 0, 127, min, max);
+            return Range.scale(gamepad1.right_trigger, 0, 127, min, max);
         }
         else{
             return 0;
