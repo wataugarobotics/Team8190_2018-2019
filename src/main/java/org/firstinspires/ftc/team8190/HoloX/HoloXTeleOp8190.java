@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.HoloX;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
