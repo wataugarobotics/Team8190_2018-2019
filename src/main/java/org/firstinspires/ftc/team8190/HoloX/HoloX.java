@@ -1,9 +1,9 @@
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.HoloX;
 
 public class HoloX{
 
     HWholoX robot = new HWholoX();
-    Gamepad gamepad1 = new Gamepad();
+    Gamepad controller = new Gamepad();
 
     private double direction;
 
@@ -21,7 +21,7 @@ public class HoloX{
     }
 
     public void move(double x, double y, double speed){
-        direction = gamepad1.getAngle(x, y);
+        direction = controller.getAngle(x, y);
         robot.mtrBL.setPower(-(Math.cos(direction - 45) * (speed/100)));
         robot.mtrFR.setPower(Math.cos(direction - 45) * (speed/100));
         robot.mtrBR.setPower(-(Math.sin(direction - 45) * (speed/100)));
