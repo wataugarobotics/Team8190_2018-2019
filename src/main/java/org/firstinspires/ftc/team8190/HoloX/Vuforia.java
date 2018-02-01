@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.HoloX;
 
 import org.firstinspires.ftc.robotcore.external.ClassFactory;
 import org.firstinspires.ftc.robotcore.external.navigation.RelicRecoveryVuMark;
