@@ -55,10 +55,10 @@ public class Gamepad {
 
     public double triggerRead (java.lang.String trigger, double min, double max){
         if ((trigger == "left" )|| (trigger == "Left")){
-            return Range.scale(gamepad1.left_trigger, 0, 127, min, max);
+            return Range.scale(gamepad1.left_trigger, 0, 1, min, max);
         }
         if ((trigger == "right" )|| trigger == "Right"){
-            return Range.scale(gamepad1.right_trigger, 0, 127, min, max);
+            return Range.scale(gamepad1.right_trigger, 0, 1, min, max);
         }
         else{
             return 0;
