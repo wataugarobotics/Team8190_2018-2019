@@ -69,15 +69,6 @@ public class HWholoX
         arm.setPosition(holoX.servoStartPos("arm"));
     }
 
-    public boolean isRed(double thresh){
-        if (sensorColor.red() > thresh){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
     public void waitForTick(long periodMs) {
 
         /* waitForTick implements a periodic delay. However, this acts like a metronome with a regular
