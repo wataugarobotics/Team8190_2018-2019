@@ -46,13 +46,13 @@ public class HoloXTeleOp8190 extends LinearOpMode {
         waitForStart();
         while(opModeIsActive()) {
             if (controller.triggerReadBoth(-1, 1) > thresh || controller.triggerReadBoth(-1, 1) < -thresh) {
-                holo.spin(gamepad1.triggerReadBoth(-1, 1));
+                holo.spin(controller.triggerReadBoth(-1, 1));
             }
-            if (Math.abs(gamepad1.stickRead("Right", "y", -1, 1)) > thresh) {
+            if (Math.abs(controller.stickRead("Right", "y", -1, 1)) > thresh) {
                 holo.position = robot.level.getPosition() + controller.stickRead("right", "y", -servoSpeed, servoSpeed);
                 //team.moveServo("Level", holo.position);
             }
-            if (Math.abs(gamepad1.stickRead("right", "X", -1, 1)) > thresh) {
+            if (Math.abs(controller.stickRead("right", "X", -1, 1)) > thresh) {
                 holo.position = robot.level.getPosition() + controller.stickRead("right", "x", -servoSpeed, servoSpeed);
             }
             if (gamepad1.left_stick_button = true) {
