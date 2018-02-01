@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.team8190;
+package org.firstinspires.ftc.team8190.HoloX;
 
 /**
  * Created by Mason on 1/27/2018.
@@ -15,6 +15,15 @@ public class Team8190 {
 
     public void stopLift(){
         robot.mtrLift.setPower(0);
+    }
+    
+    public boolean isRed(double thresh){
+        if (sensorColor.red() > thresh){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public void moveServo(java.lang.String identifier, double position){
