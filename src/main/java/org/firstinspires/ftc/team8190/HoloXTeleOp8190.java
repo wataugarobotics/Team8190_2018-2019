@@ -40,6 +40,8 @@ public class HoloXTeleOp8190 extends LinearOpMode {
     }
 
     public void runOpMode(){
+        
+        robot.init(hardwareMap);
 
         waitForStart();
         while(opModeIsActive()) {
