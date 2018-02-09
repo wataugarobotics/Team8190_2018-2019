@@ -22,7 +22,10 @@ public class HWmap {
     public Servo srvL = null;
 
     HardwareMap hardwareMap = null;
-    public HWmap(){}
+
+    public HWmap() {
+    }
+
     // Code to run ONCE when the driver hits INIT
     public void init(HardwareMap ahwmap) {
         // get motors w/o hw class (for testing)//
