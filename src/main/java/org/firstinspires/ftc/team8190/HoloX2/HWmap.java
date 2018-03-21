@@ -35,7 +35,7 @@ public class HWmap {
         mtrBR = hardwareMap.dcMotor.get("mtrBR");
         mtrBL = hardwareMap.dcMotor.get("mtrBL");
         mtrLift = hardwareMap.dcMotor.get("mtrLift");
-        mtrLvl = harwareMap.dcMotor.get("mtrLvl");
+        //mtrLvl = harwareMap.dcMotor.get("mtrLvl");
 
         srvLe = hardwareMap.servo.get("level");
         srvL = hardwareMap.servo.get("leftClaw");
